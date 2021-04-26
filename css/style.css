@@ -1,0 +1,293 @@
+/* ___________General_______________ */
+*{
+  box-sizing: border-box;
+}
+
+.color-mine
+{
+    color:#ff7d5f !important;
+}
+.rounded-mine
+{
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+.btn-mine
+{
+    background-color: #ff7d5f;
+}
+.bg-opacity
+{
+    background-color: rgba(0,0,0,0.5);
+}
+
+.brdr {
+  width: 40px;
+  height: 4px;
+  background-color: #0078ff;
+  margin: 10px auto;
+}
+
+body {
+  font-family: 'Indie Flower', cursive;
+  /* font-size: larger; */
+}
+
+/*_______________Navbar________________________*/
+
+nav .logo
+{
+    width:15% ;
+}
+
+.navbar .nav-item .nav-link {
+  color: #000;
+  transition: color 0.5s;
+}
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #e65f78;
+}
+
+.dropdown-item {
+  cursor: pointer;
+}
+
+
+/*____________Home_________________*/
+
+.home {
+  /* background-color: tomato; */
+  background-image: url(../images/mainBg.jpg);
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  color: #fff;
+}
+.caption {
+  /* background-color: tomato; */
+  height: 100%;
+}
+.caption p {
+  /* background-color: tomato; */
+  width: 40%;
+}
+.caption a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.5s;
+  text-transform: uppercase;
+}
+.caption a:hover {
+  background-color: #fff;
+  color: #000;
+}
+.layer {
+  background-color: rgba(2, 2, 133, 0.3);
+  width: 100%;
+  height: 100%;
+}
+
+.setting {
+  background-color: #000;
+  top: 20%;
+  left: 0;
+}
+.setting .fas {
+  font-size: 20px;
+}
+.home .scroll {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  bottom: 50px;
+  border: 2px solid #fff;
+  padding: 20px 12px;
+  animation: scroll 2s infinite;
+}
+.home .scroll ::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 7px;
+  bottom: 10px;
+  left: 11px;
+  background-color: #fff;
+}
+
+@keyframes scroll {
+  0% {
+    bottom: 20px;
+  }
+  50% {
+    bottom: 40px;
+  }
+  100% {
+    bottom: 20px;
+  }
+}
+
+.searchInput
+{
+    top: 65%;
+}
+
+#recipesSearch img{
+    height: 200px;
+}
+.category
+{
+    background-image: url(../images/category-bg.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+/*________recipes_________*/
+
+#recipes
+{
+    background: rgba(3, 3, 139, 0.3) url(../images/1.png);
+}
+#recipes .card img
+{
+    height: 200px !important;
+     cursor: pointer;
+}
+#recipes .card {
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+}
+#recipes .card img {
+  border-radius: 1%;
+}
+#recipes .card .card-body {
+  flex: auto;
+  padding: 1.25rem;
+}
+
+#recipes .card-info a {
+  color: #1e1e1e;
+  font-size: 1.25rem;
+}
+#recipes .card-info a:hover {
+  color: #0078ff;
+}
+#recipes .card-footer .post-img img {
+  width: 32px;
+  height: 32px;
+  margin-right: 4px;
+  overflow: hidden;
+}
+#recipes .card-footer .post-info {
+  color: #4e4e4e;
+  /* display: inline-block; */
+  float: right;
+}
+
+.card-info .mealsLinks {
+  cursor: pointer;
+}
+
+/*_____Model_____*/
+
+.modal-dialog .modal-content .modal-header h5{
+    color: #0078ff;
+}
+.modal-dialog .modal-content .modal-body label{
+    color: #0078ff;
+}
+
+/* ___________contact-section__________ */
+
+
+#contact {
+  background: rgba(3, 3, 139, 0.3) url(../images/5.png);
+}
+
+#contact .button-submit {
+  font-size: 1.25rem;
+  background-color: #0078ff;
+  color: #fff;
+  border-color: transparent;
+}
+#contact ul {
+  line-height: 2;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+#contact .contact-detail,
+p {
+  font-size: 1.1em;
+  font-weight: 300;
+}
+#contact .contact-info span {
+  color: #0078ff;
+}
+
+#contact .contact-box i{
+  color: #1e1e1e;
+  text-decoration: none;
+  background-color: transparent;
+  border-radius: 1rem;
+  text-align: center;
+  display: block;
+  float: left;
+  padding-bottom: 40px;
+  height: 40px;
+  width: 40px;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  line-height: 1.9;
+  margin: 10px 20px 0 0;
+  box-shadow: 0 0 0 2px #0078ff;
+  transition: all .5ms ease-in-out;
+  -webkit-transition: all .5ms ease-in-out;
+  -moz-transition: all .5ms ease-in-out;
+  -ms-transition: all .5ms ease-in-out;
+  -o-transition: all .5ms ease-in-out;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+#contact .contact-box:hover i {
+  color: #fff;
+  background-color: #0078ff;
+  box-shadow: 0 0 0 5px #cde1f8;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+/*________footer___________*/
+#footer {
+  font-weight: 500;
+  font-size:1.5rem ;
+}
+.home-top a{
+  text-decoration: none !important;
+}
+.home-top i{
+  padding: 6px;
+    background: #0078ff;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 1;
+    font-size: 15px;
+    border-radius: 50%;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+    z-index: 9999;
+}
